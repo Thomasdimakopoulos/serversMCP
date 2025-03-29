@@ -14,7 +14,7 @@
     "build"
   ],
   "scripts": {
-    "build": "tsc && shx chmod +x build/*.js",
+    "build": "node init && tsc && shx chmod +x build/*.js",
     "prepare": "npm run build",
     "watch": "tsc --watch"
   },
