@@ -13,15 +13,17 @@
   ],
   "files": [],
   "scripts": {
-    "build": "npm run build --workspaces",
+    "build": "node init && npm run build --workspaces",
     "watch": "npm run watch --workspaces",
     "publish-all": "npm publish --workspaces --access public",
     "link-all": "npm link --workspaces"
   },
   "dependencies": {
     "@modelcontextprotocol/server-everything": "*",
-    "@modelcontextprotocol/server-memory": "*",
     "@modelcontextprotocol/server-filesystem": "*",
-    "@modelcontextprotocol/server-sequential-thinking": "*"
+    "@modelcontextprotocol/server-memory": "*",
+    "@modelcontextprotocol/server-sequential-thinking": "*",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
   }
 }
